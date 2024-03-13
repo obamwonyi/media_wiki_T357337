@@ -1,0 +1,121 @@
+.main-section
+{
+    margin-top: var(--margin-from-nav);
+}
+
+.img-div
+{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img-main
+{
+    width: 200px;
+    height: 200px;
+    transition: 1s ease;
+}
+
+.img-main:hover
+{
+    transition: 1s ease;
+    scale: 1.1;
+}
+
+.input-div
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 30px;
+}
+
+.input-field-div
+{
+    border: 1px solid black;
+}
+
+.input-field
+{
+    height: 30px;
+    width: 150px;
+    text-decoration: none;
+    border: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.input-field:focus
+{
+    outline: none;
+}
+
+.cdx-button
+{
+    height: 100%;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--color-black-500);
+    color: var(--color-white-100);
+}
+
+.cdx-button:focus
+{
+    border: 0px;
+}
+
+
+/* -----------------accordion section ------------------------*/
+.accordion-div
+{
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 40px;
+    color: var(--color-black-500);
+}
+
+
+.accordion-div-extract
+{
+    font-size: 0.9rem;
+}
+
+
+.loader-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 30px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  background:
+    linear-gradient(0deg ,rgb(0 0 0/50%) 30%,#0000 0 70%,rgb(0 0 0/100%) 0) 50%/8% 100%,
+    linear-gradient(90deg,rgb(0 0 0/25%) 30%,#0000 0 70%,rgb(0 0 0/75% ) 0) 50%/100% 8%;
+  background-repeat: no-repeat;
+  animation: l23 1s infinite steps(12);
+}
+.loader::before,
+.loader::after {
+   content: "";
+   grid-area: 1/1;
+   border-radius: 50%;
+   background: inherit;
+   opacity: 0.915;
+   transform: rotate(30deg);
+}
+.loader::after {
+   opacity: 0.83;
+   transform: rotate(60deg);
+}
+@keyframes l23 {
+  100% {transform: rotate(1turn)}
+}

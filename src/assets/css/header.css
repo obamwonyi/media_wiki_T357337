@@ -1,0 +1,65 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--color-black-500);
+    transition: all 0.35s ease;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--color-white-100);
+    cursor: pointer;
+}
+
+.nav
+{
+    width: 90vw;
+    height: 4rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.brand
+{
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.nav-links-div
+{
+    width: 40%;
+    display: flex;
+}
+
+.nav-links-ul
+{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+
+.discover
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    background-color: var( --color-blue-600);
+    padding: 5px;
+    border-radius: 25px;
+}

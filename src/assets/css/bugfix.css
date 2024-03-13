@@ -1,0 +1,6 @@
+.bugfix-main
+{
+    width: 90%;
+    margin: auto;
+    margin-top: var(--margin-from-nav);
+}

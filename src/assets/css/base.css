@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+/* Inside your main CSS file */
+:root
+{
+    --color-white-100: hsl(206, 5%, 100%);
+    --color-black-500: hsl(216, 22%, 4%);
+    --color-blue-600: hsl(221, 83%, 53%);
+    --margin-from-nav: 130px;
+    --icon-trash: red;
+}
+
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: var(--color-white-100);
+    font-family: "Rubik", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.cdx-icon
+{
+    color: var(--icon-trash);
+}
